@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "eb3e325ec2d4b3fce8c11efc1aae803b2cb0fe23088202e82a732adc5a3eb322"
+            "sha256": "1de709fb8f5828a14673b77459a3d64a1eb00a31649c6ebad73d7b68e726b409"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -52,6 +52,14 @@
             ],
             "version": "==0.2.3"
         },
+        "geopy": {
+            "hashes": [
+                "sha256:2450f7f85b1fe980b0a3f2e09117ae1ace34e4b9034d52e2e782f486a5a8036c",
+                "sha256:d53a31df9cfb5591fa96a35da9f02ef3c67241e3c32d7cd82d4d94211d46d6a0"
+            ],
+            "index": "pypi",
+            "version": "==1.12.0"
+        },
         "html5lib": {
             "hashes": [
                 "sha256:20b159aa3badc9d5ee8f5c647e5efd02ed2a66ab8d354930bd9ff139fc1dc0a3",
@@ -72,7 +80,6 @@
                 "sha256:51c158a6c8b899898d1c91c6b51a34110196815cc905f9be0fa5878e19355608",
                 "sha256:fcc6d46f08c3c4de7b15ae1c426e15be1b7932bcda9d83ce1a4304e8c1129df3"
             ],
-            "markers": "python_version >= '3.3'",
             "version": "==6.2.1"
         },
         "ipython-genutils": {
