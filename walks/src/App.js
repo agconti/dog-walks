@@ -1,23 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+const WalkCard = ({timestamp, distance, duration, week_day}) => (
+  <div>
+    <header>
+      <h1>{week_day} Walk {timestamp}</h1>
+    </header>
+    <p>{distance}</p>
+    <p>{duration}</p>
+  </div>
+)
+
 class App extends Component {
+  state = {
+    'walks': []
+  }
+  constructor(props) {
+    super(props)
+    this.setState = this.setState.bind(this)
+  }
+
   componentDidMount() {
     fetch('/walks.json')
-    .then(res => res.json())
-    .then(console.log)
+      .then(res => res.json())
+      .then(walks => this.setState({walks}))
   }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+          {this.state.walks.map(walk => <WalkCard {...walk} key={walk.id}/>)}
       </div>
     );
   }
