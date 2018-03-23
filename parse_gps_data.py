@@ -61,7 +61,7 @@ def get_street_address(row):
 
 def is_new_walk(row):
     """
-    Naively identifies new walks by checking if the time between the previous
+    Naively identify new walks by checking if the time passed since the previous
     record is greater then our threshold.
     """
     timestamp_delta = row.timestamp_delta
