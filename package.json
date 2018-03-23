@@ -1,0 +1,20 @@
+{
+  "name": "dog-walks",
+  "version": "0.1.0",
+  "description": "A demo that parses dog walks from GPS data in python with pandas and renders summary information in a react frontend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agconti/dog-walks.git"
+  },
+  "author": "Andrew Conti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agconti/dog-walks/issues"
+  },
+  "homepage": "https://github.com/agconti/dog-walks#readme"
+}
